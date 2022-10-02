@@ -1,0 +1,63 @@
+detected by 61.44.144.66
+cmd:openssl s_client -connect imap.gmail.com:993
+
+
+depth=1 O = AO Kaspersky Lab, CN = Kaspersky Anti-Virus Personal Root Certificate
+verify error:num=19:self signed certificate in certificate chain
+verify return:1
+depth=1 O = AO Kaspersky Lab, CN = Kaspersky Anti-Virus Personal Root Certificate
+verify return:1
+depth=0 CN = imap.gmail.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN = imap.gmail.com
+   i:O = AO Kaspersky Lab, CN = Kaspersky Anti-Virus Personal Root Certificate
+ 1 s:O = AO Kaspersky Lab, CN = Kaspersky Anti-Virus Personal Root Certificate
+   i:O = AO Kaspersky Lab, CN = Kaspersky Anti-Virus Personal Root Certificate
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDNTCCAh2gAwIBAgIJQgAABf9jOWyLMA0GCSqGSIb3DQEBCwUAMFQxGTAXBgNV
+BAoMEEFPIEthc3BlcnNreSBMYWIxNzA1BgNVBAMMLkthc3BlcnNreSBBbnRpLVZp
+cnVzIFBlcnNvbmFsIFJvb3QgQ2VydGlmaWNhdGUwHhcNMjIwNDAzMTA0ODQzWhcN
+MjMwNDAyMTA0ODQzWjAZMRcwFQYDVQQDEw5pbWFwLmdtYWlsLmNvbTCCASIwDQYJ
+KoZIhvcNAQEBBQADggEPADCCAQoCggEBAPUmwBgKCXX5/5gBzSxMhe0FKNj1OCIR
+7AWlXbbkY1uq6IiPjE74cnTcZ+yCql+3hxpT/ehbMZ6m1lfGi00Ow/xpmLJmDmzj
+8i3HX7BVkaIPxsKUz5wUP1uvqgn8du3x+EGcxHwzGkhSNHs+07sQRBwtjRL0pdEl
+Efn30BrKnEXjAa7Pid12GzPTM63Fbt4WVBsCoI6jfXkoe8biCq/shfjvFwhmHxGM
+6koMN9xMpe5C9CGCJDXiZV+zoKvhnjOjWqyLXGTtiZYNm+P2ESwXIArWS8O56kCK
+EoVA2wFjnI+nfS9J8QB/nr0LT3+zUQtNPVz1awfEcmdYWpMiGMhzUwMCAwEAAaNF
+MEMwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMB8GA1UdEQQYMBaH
+BGyxYWyCDmltYXAuZ21haWwuY29tMA0GCSqGSIb3DQEBCwUAA4IBAQBF9GMbzYzj
+TtOtHsyQTlUgQqVQrWyjZ8QtMVSwTL3nNKJcYGLeAyPs14Xw773EsFwMJNX6ygi2
+KUs339I0/eFTxI0a8DYE7EqRnnZIrwlTB7Z2D7tFoIzHLQMSh5IrHntTKNMzUSbM
+MJpEXxeNJmxPKHYuucKL841C3SoDB9Rj2MpPybsnqabEnvHGiFjZ9VJkkqxZphKY
+ocA+AjUYWlZKdMuqm2j3/L+Uj8uw/dWdNuUOEE5T6wgwHn75k4liFDKvjyRnIiVY
+rPtnNIVCgXknAVllTJk9psC2ySLOGIw9vsdo6sv7jpZwBmlW38mOS9HVgLHpOEWx
+KAo7iwSdLQh3
+-----END CERTIFICATE-----
+subject=CN = imap.gmail.com
+
+issuer=O = AO Kaspersky Lab, CN = Kaspersky Anti-Virus Personal Root Certificate
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 2309 bytes and written 396 bytes
+Verification error: self signed certificate in certificate chain
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 19 (self signed certificate in certificate chain)
+---
+* OK Gimap ready for requests from 61.44.144.66 c33mb394930145ivu
